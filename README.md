@@ -1,3 +1,8 @@
+Current Status
+-----------------
+Please note only the first 6 columns are currently being read from the xls, persisted and retrieved.
+It should be easy to add the remaining columns to the logic. I will commit more changes when fully done.
+
 Swagger URL
 -------------
 http://localhost:8080/swagger-ui/index.html#/
