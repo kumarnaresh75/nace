@@ -65,7 +65,7 @@ public class NaceUploadService {
     private NaceDto processRow(Row row) {
 
         NaceDto naceDto = new NaceDto();
-        for (int i = 0; i < 9 ; i++) {
+        for (int i = 0; i < 10 ; i++) {
             Cell cell = row.getCell(i);
 
             if(row.getCell(i)==null)
@@ -73,24 +73,15 @@ public class NaceUploadService {
 
             String cellValStr = getStringCellValue(cell);
             switch (i) {
-                case 0:
-                    naceDto.setOrderNum(cellValStr);
-                    break;
-                case 1:
-                    naceDto.setLevel(cellValStr);
-                    break;
-                case 2:
-                    naceDto.setCode(cellValStr);
-                    break;
-                case 3:
-                    naceDto.setParent(cellValStr);
-                    break;
-                case 4:
-                    naceDto.setDescription(cellValStr);
-                    break;
-                case 5:
-                    naceDto.setItemIncludes(cellValStr);
-                    break;
+                case 0 -> naceDto.setOrderNum(cellValStr);
+                case 1 -> naceDto.setLevel(cellValStr);
+                case 2 -> naceDto.setCode(cellValStr);
+                case 3 -> naceDto.setParent(cellValStr);
+                case 4 -> naceDto.setDescription(cellValStr);
+                case 5 -> naceDto.setItemIncludes(cellValStr);
+                case 6 -> naceDto.setItemAlsoIncludes(cellValStr);
+                case 8 -> naceDto.setItemExcludes(cellValStr);
+                case 9 -> naceDto.setReference(cellValStr);
             }
         }
 

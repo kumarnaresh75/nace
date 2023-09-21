@@ -21,8 +21,11 @@ public class Nace {
     private String code;
     private String parent;
     private String description;
-    @Column(length = 10000 )
+    @Column(columnDefinition = "TEXT")
     private String itemIncludes;
-
-
+    @Column(columnDefinition = "TEXT")
+    private String itemAlsoIncludes;
+    @Column(columnDefinition = "TEXT")
+    private String itemExcludes;
+    private String reference;
 }

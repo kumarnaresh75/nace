@@ -1,7 +1,7 @@
 Current Status
 -----------------
-Please note only the first 6 columns are currently being read from the xls, persisted and retrieved.
-It should be easy to add the remaining columns to the logic. I will commit more changes when fully done.
+Please note all columns except Rulings are currently being read from the xls, persisted and retrieved.
+The Rulings column seems to be having formula error.
 
 Swagger URL
 -------------
@@ -34,8 +34,11 @@ TESTS
 TEST DB: h2 in memory
 
 Integration test: NaceApplicationTests
+
 Repository test: NaceRepositoryTest
+
 Unit test: NaceUtilsTest
+
 
 
 

@@ -17,6 +17,8 @@ public class NaceDto {
     private String code;
     private String parent;
     private String description;
-
     private String itemIncludes;
+    private String itemAlsoIncludes;
+    private String itemExcludes;
+    private String reference;
 }

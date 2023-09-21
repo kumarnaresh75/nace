@@ -7,5 +7,8 @@ CREATE TABLE nace (
     code VARCHAR(255),
     parent VARCHAR (255),
     description varchar(255),
-    item_includes varchar(4000)
+    item_includes varchar(4000),
+    item_also_includes varchar(4000),
+    item_excludes varchar(4000),
+    reference varchar(4000)
 );

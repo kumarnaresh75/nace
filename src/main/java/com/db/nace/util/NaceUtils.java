@@ -30,6 +30,9 @@ public class NaceUtils {
                     nace.setCode(dto.getCode());
                     nace.setDescription(dto.getDescription());
                     nace.setItemIncludes(dto.getItemIncludes());
+                    nace.setItemAlsoIncludes(dto.getItemAlsoIncludes());
+                    nace.setItemExcludes(dto.getItemExcludes());
+                    nace.setReference(dto.getReference());
                     return nace;
                 }
         ).collect(Collectors.toList());
@@ -44,6 +47,10 @@ public class NaceUtils {
         naceDto.setCode(naceEntity.getCode());
         naceDto.setDescription(naceEntity.getDescription());
         naceDto.setItemIncludes(naceEntity.getItemIncludes());
+        naceDto.setItemAlsoIncludes(naceEntity.getItemAlsoIncludes());
+        naceDto.setItemExcludes(naceEntity.getItemExcludes());
+        naceDto.setReference(naceEntity.getReference());
+
         return naceDto;
     }
 }
