@@ -14,7 +14,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Nace {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "nace_seq_generator")
+    @SequenceGenerator(name="nace_seq_generator",sequenceName = "nace_seq",allocationSize = 500)
     private Long id;
     private Long orderNum;
     private Long level;
